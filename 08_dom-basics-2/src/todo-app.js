@@ -162,7 +162,7 @@
       let todoItem = createTodoItem(todoItemForm.input.value);
 
       // добавляем обработчики на кнопки
-      changeDoneStatus(todoItem.item, todoItem, doneButton);
+      changeDoneStatus(todoItem.item, todoItem.doneButton);
       confirmDelete(todoItem.item, todoItem.deleteButton);
 
       let localStorageData = localStorage.getItem(listName); // записываем данные в переменную из locaStorage
